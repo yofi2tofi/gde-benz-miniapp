@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Карта АЗС</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script type="module" crossorigin src="./assets/index-DwTYQ7ya.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DKY_6EA3.css">
+  <script type="module" crossorigin src="./assets/index-CcK_nQc3.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-1B91ywjV.css">
 </head>
 <body>
   <div id="app">
@@ -16,7 +16,10 @@
     </header>
     <div id="map"></div>
     <div id="fallback" class="hidden">
-      <input id="city-input" type="text" placeholder="Введи город…" autocomplete="off" />
+      <div id="city-row">
+        <input id="city-input" type="text" placeholder="Введи город…" autocomplete="off" />
+        <button id="city-find">Найти</button>
+      </div>
       <div id="city-hint"></div>
     </div>
     <div id="geo-offer">
