@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Карта АЗС</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script type="module" crossorigin src="./assets/index-BVFrB9Qe.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Cdy_sBz_.css">
+</head>
+<body>
+  <div id="app">
+    <header id="topbar" class="hidden">
+      <span id="subs-counter" class="chip">Подписки 0/0</span>
+      <span id="fuel-default" class="chip chip-action">Все топлива ✎</span>
+    </header>
+    <div id="map"></div>
+    <div id="fallback" class="hidden">
+      <input id="city-input" type="text" placeholder="Введи город…" autocomplete="off" />
+      <div id="city-hint"></div>
+    </div>
+    <div id="sheet" class="hidden">
+      <div class="sheet-title" id="sheet-name"></div>
+      <div class="sheet-sub" id="sheet-meta"></div>
+      <div class="sheet-chips" id="sheet-fuels"></div>
+      <div class="sheet-limit hidden" id="sheet-limit"></div>
+      <button id="sheet-btn" class="btn-primary"></button>
+    </div>
+    <div id="error-screen" class="hidden">
+      <div id="error-text"></div>
+    </div>
+  </div>
+</body>
+</html>
